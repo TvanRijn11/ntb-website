@@ -1,0 +1,46 @@
+.app-footer{
+    background-color: #800000;
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    color: #fff;
+    padding: 0 16px;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    
+}
+
+.logo {
+    background: url("./../../../assets/top.svg");
+    position: absolute;
+    left: 30px;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: center;
+    background-size: contain;
+    width: 4vh;
+    height: 4vh;
+    margin-right: 20px;
+}
+
+.menu{
+    width: 34%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Playkids';
+}
+
+.menu-not-active{
+    color: white;
+    text-decoration: none;
+}
+.menu-not-active:hover{
+    color: grey;
+}
+
+.menu-active{
+    color: white;
+    text-decoration: underline;
+}

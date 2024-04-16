@@ -1,0 +1,57 @@
+.app-splash-screen {
+    background: #800000;
+    position: fixed;
+    top: 0; /* Change top to 100% to start from the bottom */
+    left: 0;
+    right: 0;
+    bottom: 100%; /* Slide to top */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    opacity: 1;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Add transition properties */
+    transform: translateY(0vh);
+  }
+
+.app-splash-screen.slide-out {
+    transform: translateY(-100%);
+}
+
+.top-logo {
+    background: url("./../../../assets/top.svg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: center;
+    background-size: contain;
+    width: 40vh;
+    height: 50vh;
+    opacity: 0; /* Initially hide the logo */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Add transition properties */
+    transform: translateY(-80vh);
+}
+
+.top-logo.slide-in {
+    opacity: 1; /* Show the logo */
+    transform: translateY(0); /* Move the logo back to its original position */
+}
+
+.bottom-logo {
+    background: url("./../../../assets/bottom.svg");
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-position: center;
+    background-size: contain;
+    width: 40vh;
+    height: 20vh;
+    opacity: 0; /* Initially hide the logo */
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Add transition properties */
+    transform: translateY(50vh);
+}
+
+.bottom-logo.slide-in {
+    opacity: 1; /* Show the logo */
+    transform: translateY(0); /* Move the logo back to its original position */
+}
