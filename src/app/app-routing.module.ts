@@ -1,11 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
-import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { LichtingenComponent } from './components/lichtingen/lichtingen.component';
-import { KrantjesComponent } from './components/krantjes/krantjes.component';
-import { ActiviteitenComponent } from './components/activiteiten/activiteiten.component';
+import { HomeComponent } from './features/home/home.component';
+import { LichtingenComponent } from './features/lichtingen/lichtingen.component';
+import { KrantjesComponent } from './features/krantjes/krantjes.component';
+import { ActiviteitenComponent } from './features/activiteiten/activiteiten.component';
+import { SplashScreenComponent } from './shared/components/splash-screen/splash-screen.component';
 
 const routes: Routes = [
   {
@@ -23,6 +22,10 @@ const routes: Routes = [
   {
     component: ActiviteitenComponent,
     path: "activiteiten"
+  },
+  {
+    component: SplashScreenComponent,
+    path: "splash"
   },
   {
     path: "",

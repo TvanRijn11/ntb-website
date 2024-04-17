@@ -3,14 +3,14 @@ import { BrowserModule, provideClientHydration } from '@angular/platform-browser
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SplashScreenComponent } from './components/splash-screen/splash-screen.component';
-import { HomeComponent } from './components/home/home.component';
 import { CommonModule } from '@angular/common';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { FooterComponent } from './components/footer/footer.component';
-import { LichtingenComponent } from './components/lichtingen/lichtingen.component';
-import { KrantjesComponent } from './components/krantjes/krantjes.component';
-import { ActiviteitenComponent } from './components/activiteiten/activiteiten.component';
+import { HomeComponent } from './features/home/home.component';
+import { SplashScreenComponent } from './shared/components/splash-screen/splash-screen.component';
+import { NavBarComponent } from './shared/components/nav-bar/nav-bar.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+import { LichtingenComponent } from './features/lichtingen/lichtingen.component';
+import { KrantjesComponent } from './features/krantjes/krantjes.component';
+import { ActiviteitenComponent } from './features/activiteiten/activiteiten.component';
 
 @NgModule({
   declarations: [
