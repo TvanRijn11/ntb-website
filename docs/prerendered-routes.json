@@ -1,0 +1,9 @@
+{
+  "routes": [
+    "/activiteiten",
+    "/home",
+    "/krantjes",
+    "/lichtingen",
+    "/splash"
+  ]
+}
