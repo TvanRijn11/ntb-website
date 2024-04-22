@@ -1,0 +1,9 @@
+<div class="text-picture" [ngClass]="{'left-layout': layout === 1, 'right-layout': layout === 2}">
+    <div class="picture">
+        <img [src]="picUrl" alt="Image">
+    </div>
+    <div class="text">
+        <div class="titel">{{title}}</div>
+        <p>{{text}}</p>
+    </div>
+</div>

@@ -11,6 +11,7 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { LichtingenComponent } from './features/lichtingen/lichtingen.component';
 import { KrantjesComponent } from './features/krantjes/krantjes.component';
 import { ActiviteitenComponent } from './features/activiteiten/activiteiten.component';
+import { TextPictureComponent } from './shared/components/text-picture/text-picture.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ActiviteitenComponent } from './features/activiteiten/activiteiten.comp
     FooterComponent,
     LichtingenComponent,
     KrantjesComponent,
-    ActiviteitenComponent
+    ActiviteitenComponent,
+    TextPictureComponent
   ],
   imports: [
     CommonModule,
