@@ -1,29 +1,27 @@
 .text-picture {
     display: flex;
-    flex-direction: row;
-    // justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     margin: 20px auto;
-    max-width: 80vw;
+    max-width: 70vw;
 }
 
 .picture {
-    margin: 0 auto;
+    margin-right: 10px;
 }
 
 .picture img {
-    max-width: 350px;
-    height: auto;
+    max-width: 100%; /* Change max-width to 100% for mobile view */
 }
 
 .text {
     font-size: medium;
-    text-align: justify;
+    margin: 10px;
 }
 
 .titel {
     font-family: 'Playkids';
-    font-size: x-large;
+    font-size: xx-large;
     color: #800000;
 }
 
@@ -44,11 +42,22 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .square {
+    .text-picture {
         flex-direction: row;
     }
-    .pic {
-        margin-right: 20px;
+
+    .picture {
+        margin-right: 0; /* Remove margin for pictures in columns */
+        margin-bottom: 20px; /* Add margin bottom for pictures in columns */
+    }
+
+    .text {
+        text-align: center; /* Center text in columns */
+    }
+
+    .picture img {
+        max-width: 450px;
+        max-height: 300px;
     }
 }
 

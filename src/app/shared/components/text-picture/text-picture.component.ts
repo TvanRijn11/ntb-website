@@ -13,8 +13,8 @@ export class TextPictureComponent {
 
   picUrl!: string;
 
-  OnInit() {
-    this.picUrl = '../../../../assets/' + this.picture
+  ngOnInit() {
+    this.picUrl = `../../../../assets/${this.picture}`;
   }
 
 }
