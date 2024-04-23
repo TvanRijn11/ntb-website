@@ -1,12 +1,12 @@
-.app-footer{
+.nav-bar {
     background-color: #800000;
     display: flex;
     color: #fff;
     padding: 0 16px;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 56px;
-    
+    position: relative;
 }
 
 .logo {
@@ -22,22 +22,64 @@
     margin-right: 20px;
 }
 
-.menu{
-    width: 34%;
+.menu {
     display: flex;
-    justify-content: space-between;
     font-family: 'Playkids';
+    width: 100%;
+    justify-content: center;
+    gap: 4vw;
 }
 
-.menu-not-active{
+.menu-not-active {
     color: white;
     text-decoration: none;
 }
-.menu-not-active:hover{
+
+.menu-not-active:hover {
     color: grey;
 }
 
-.menu-active{
+.menu-active {
     color: white;
     text-decoration: underline;
+}
+
+.menu-toggle {
+    cursor: pointer;
+    padding: 10px;
+    display: none; /* Hide toggle button by default */
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+        justify-content: flex-end;
+    }
+
+    .menu {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        background-color: #800000;
+        z-index: 1000;
+        flex-direction: column; /* Stack menu items vertically */
+        display: none; /* Hide menu by default on small screens */
+        padding-top: 60px; /* Add padding to prevent overlap with navigation bar */
+    }
+
+    .menu.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .menu-toggle {
+        display: flex;
+        flex-direction: column; /* Show toggle button on small screens */
+    }
 }

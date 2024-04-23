@@ -12,6 +12,7 @@ import { LichtingenComponent } from './features/lichtingen/lichtingen.component'
 import { KrantjesComponent } from './features/krantjes/krantjes.component';
 import { ActiviteitenComponent } from './features/activiteiten/activiteiten.component';
 import { TextPictureComponent } from './shared/components/text-picture/text-picture.component';
+import { LichtingenDetailComponent } from './features/lichtingen/lichtingen-detail/lichtingen-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { TextPictureComponent } from './shared/components/text-picture/text-pict
     LichtingenComponent,
     KrantjesComponent,
     ActiviteitenComponent,
-    TextPictureComponent
+    TextPictureComponent,
+    LichtingenDetailComponent
   ],
   imports: [
     CommonModule,

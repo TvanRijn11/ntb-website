@@ -1,0 +1,18 @@
+<div class="lichting-detail">
+    <div class="lichting">
+        <p class="title">{{ lichting.name }}</p>
+        <img [src]="'../../../../assets/'+lichting.photo" alt="{{ lichting.name }}">
+        <ul>
+            <li *ngFor="let member of lichting.members">{{ member }}</li>
+        </ul>
+    </div>
+
+    <div class="next">
+        <a class="lichting-links" *ngIf="lichting.id > 0" [routerLink]="['/lichting', lichting.id-1]">
+            <span>Lichting {{lichting.id-1}}</span>
+        </a>
+        <a class="lichting-right" *ngIf="lichting.id < 5" [routerLink]="['/lichting', lichting.id+1]">
+            <span>Lichting {{lichting.id+1}}</span>
+        </a>
+    </div>
+</div>

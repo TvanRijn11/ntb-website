@@ -1,36 +1,26 @@
-<div class="app-footer">
+<div class="nav-bar">
     <div class="logo"></div>
-    <div class="menu">
-        <a [routerLink]="['/home']"
-            routerLinkActive
-            #home="routerLinkActive"
-            [ngClass]="{
-                'menu-active': home.isActive,
-                'menu-not-active': !home.isActive,
-            }"
-            >Home</a>
-        <a [routerLink]="['/lichtingen']"
-            routerLinkActive
-            #lichtingen="routerLinkActive"
-            [ngClass]="{
-                'menu-active': lichtingen.isActive,
-                'menu-not-active': !lichtingen.isActive,
-            }"
-            >Lichtingen</a>
-        <a [routerLink]="['/krantjes']"
-            routerLinkActive
-            #krantjes="routerLinkActive"
-            [ngClass]="{
-            'menu-active': krantjes.isActive,
-            'menu-not-active': !krantjes.isActive,
-        }">Krantjes</a>
-        <a [routerLink]="['/activiteiten']"
-            routerLinkActive
-            #activiteiten="routerLinkActive"
-            [ngClass]="{
-            'menu-active': activiteiten.isActive,
-            'menu-not-active': !activiteiten.isActive
-            }">Activiteiten</a>
+    <div class="menu" [class.active]="isMenuOpen">
+        <a [routerLink]="['/home']" routerLinkActive #home="routerLinkActive" (click)="closeMenu()"
+            [ngClass]="{'menu-active': home.isActive, 'menu-not-active': !home.isActive}">
+            Home
+        </a>
+        <a [routerLink]="['/lichtingen']" routerLinkActive #lichtingen="routerLinkActive" (click)="closeMenu()"
+            [ngClass]="{'menu-active': lichtingen.isActive, 'menu-not-active': !lichtingen.isActive}">
+            Lichtingen
+        </a>
+        <a [routerLink]="['/krantjes']" routerLinkActive #krantjes="routerLinkActive" (click)="closeMenu()"
+            [ngClass]="{'menu-active': krantjes.isActive, 'menu-not-active': !krantjes.isActive}">
+            Krantjes
+        </a>
+        <a [routerLink]="['/activiteiten']" routerLinkActive #activiteiten="routerLinkActive" (click)="closeMenu()"
+            [ngClass]="{'menu-active': activiteiten.isActive, 'menu-not-active': !activiteiten.isActive}">
+            Activiteiten
+        </a>
     </div>
-    <div></div>
+    <div class="menu-toggle" (click)="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </div>

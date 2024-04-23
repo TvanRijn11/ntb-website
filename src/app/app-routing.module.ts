@@ -5,6 +5,7 @@ import { LichtingenComponent } from './features/lichtingen/lichtingen.component'
 import { KrantjesComponent } from './features/krantjes/krantjes.component';
 import { ActiviteitenComponent } from './features/activiteiten/activiteiten.component';
 import { SplashScreenComponent } from './shared/components/splash-screen/splash-screen.component';
+import { LichtingenDetailComponent } from './features/lichtingen/lichtingen-detail/lichtingen-detail.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,7 @@ const routes: Routes = [
     component: LichtingenComponent,
     path: "lichtingen"
   },
+  { path: 'lichting/:id', component: LichtingenDetailComponent },
   {
     component: KrantjesComponent,
     path: "krantjes"

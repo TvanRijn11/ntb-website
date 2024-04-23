@@ -1,0 +1,40 @@
+/* Styles for lichting-detail */
+.lichting-detail {
+    margin: auto; /* Center the content horizontally */
+    max-width: 800px; /* Set a maximum width for the content */
+    padding: 20px; /* Add padding for better spacing */
+}
+
+/* Styles for lichting */
+.lichting {
+    margin: auto; /* Center the content horizontally */
+    width: 100%; /* Set the width to 100% to fill the available space */
+    text-align: center; /* Center the text within the container */
+}
+
+/* Styles for title */
+.title {
+    font-family: 'Playkidz';
+    font-size: xx-large;
+}
+
+/* Styles for next */
+.next {
+    position: sticky;
+    bottom: 10px;
+    text-align: center; /* Center the content within the container */
+    overflow: hidden; /* Hide the links when not visible */
+    transition: max-height 0.5s ease; /* Add transition effect for smooth sliding */
+    max-height: 50px; /* Set a default height for the links */
+}
+
+/* Styles for lichting-links */
+.lichting-links {
+    float: left; /* Float the element to the left */
+}
+
+/* Styles for lichting-right */
+.lichting-right {
+    float: right; /* Float the element to the right */
+}
+

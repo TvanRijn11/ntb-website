@@ -1,1 +1,12 @@
-<p>lichtingen works!</p>
+<div class="lichtingen">
+    <p class="title">Ledenregister</p>
+    <p class="under-title">Om eer te doen aan de leden die voor ons zijn gegaan en dit mooi genootschap tot een uitsluitend succes hebben gemaakt (en voor administratie doeleinden), beschikken wij over een ledenregister, gecategoriseerd per lichting: </p>
+
+    <ul>
+        <li *ngFor="let lichting of lichtingen">
+            <a class="lichting-naam" [routerLink]="['/lichting', lichting.id]">
+                <span>{{ lichting.name }}</span>
+            </a>
+        </li>
+    </ul>
+</div>
